@@ -11,7 +11,7 @@ brew install azcopy
 ## Sync
 
 ```zsh
-azcopy sync "./frontend/" "https://<storage-account-name>.blob.core.windows.net/$web/"
+azcopy sync './frontend/dist/' 'https://webperformancestorage.blob.core.windows.net/$web?<SAS>' --recursive
 ```
 
 ## Issue
